@@ -1,16 +1,17 @@
 {
     "name": "obsidian-focus-mode",
     "version": "1.11.5",
-    "description": "Add Focus Mode to Obsidian.",
+    "description": "Add Focus Mode to Obsidian while keeping statusbar active.",
     "main": "main.js",
     "scripts": {
         "dev": "rollup --config rollup.config.js -w",
-        "build": "rollup --config rollup.config.js --environment BUILD:production"
+        "build": "rollup --config rollup.config.js --environment BUILD:production",
+        "clean": "powershell -Command \"Remove-Item main.js -ErrorAction SilentlyContinue; Remove-Item dist, build -Recurse -Force -ErrorAction SilentlyContinue\""
     },
     "keywords": [],
     "author": "",
     "license": "MPL-2.0",
-    "repository": "https://github.com/ryanpcmcquen/obsidian-focus-mode",
+    "repository": "https://github.com/LaurenzTU/obsidian-focus-mode-forked.git",
     "devDependencies": {
         "@rollup/plugin-commonjs": "^18.0.0",
         "@rollup/plugin-node-resolve": "^11.2.1",
